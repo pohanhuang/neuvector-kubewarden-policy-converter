@@ -27,7 +27,7 @@ func TestBuildAllowPrivilegedEscalationPolicySettings(t *testing.T) {
 					Value: "true",
 				},
 			},
-			expectedSettings: []byte(`{"default_allow_privilege_escalation":true}`),
+			expectedSettings: []byte(`{"default_allow_privilege_escalation":false}`),
 		},
 	}
 

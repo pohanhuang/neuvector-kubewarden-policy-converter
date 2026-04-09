@@ -32,5 +32,5 @@ func (h *AllowPrivilegedEscalationHandler) BuildPolicySettings(
 	_ []*nvapis.RESTAdmRuleCriterion,
 ) ([]byte, error) {
 	// In NeuVector, the allow privilege escalation setting is always true, so we set the map value to true.
-	return []byte(`{"default_allow_privilege_escalation":true}`), nil
+	return []byte(`{"default_allow_privilege_escalation":false}`), nil
 }
